@@ -1,0 +1,283 @@
+/*The following code to effect the page headers was learned from W3Schools and implemented by me to display for my own unique website aesthetics*/
+h1 {
+    text-align: center;
+    font-family: verdana;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    clear: left;
+    margin: auto;
+}
+
+h2 {
+    margin: 20px;
+    text-align: left;
+    text-decoration: underline;
+    text-decoration-color: darkseagreen;
+    text-decoration-style: wavy;
+}
+
+h2.title {
+    text-align: center;
+}
+
+h3 {
+    margin-left: 30px;
+}
+
+body {
+    font-family: verdana;
+    margin: auto;
+    text-align: left;
+}
+
+/* The following CSS code for the navigation bar was taken from https://www.w3schools.com/css/css_navbar.asp and altered by me to reflect my own website aethetics*/
+li.navbar {
+    list-style-type: none;
+    margin: 1.5%;
+    padding: 5px;
+    overflow: hidden;
+    background-color: darkseagreen;
+    border-radius: 50px;
+    display: inline-block;
+    text-align: center;
+}
+
+.active {
+    background-color: lavender;
+    border-radius: 50px;
+}
+
+li.navbar {
+    float: left;
+    font-family: verdana;
+    text-decoration: none;
+}
+
+li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 5px 28px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: lavender;
+    border-radius: 50px;
+}
+
+p {
+    font-family: verdana;
+    margin: 30px;
+}
+
+/* The following CSS code for tables was learned from https://www.w3schools.com/css/css_table.asp and edited to reflect the wesite themes */
+table,
+tr {
+    width: 70%;
+    text-align: center;
+    table-layout: auto;
+    background-color: white;
+    margin: auto;
+    border-bottom: 1px;
+    margin-bottom: 2px
+}
+
+th {
+    background-color: darkseagreen;
+}
+
+td {
+    border: 1px solid black;
+}
+
+/* The following CSS code was taken from https://www.w3schools.com/css/css_background.asp to create the header on every page*/
+.header {
+    padding: 200px 20px 400px 20px;
+    font-size: 45px;
+    text-align: center;
+    background-image: url(./images/dublin%201.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+/*This CSS code was taken from https://www.w3schools.com/howto/howto_css_blog_layout.asp to style the blog-like posts on the "home" page*/
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/*The following 10 pieces of CSS code are taken from https://www.w3schools.com/css/css_image_gallery.asp and used to create a responsive image gallery, which is then adjusted by me to fit the aesthic of the webpage*/
+div.gallery {
+    display: inline;
+}
+
+div.gallery:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+div.gallery img {
+    width: 100%;
+    height: 400px;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.gallery1 {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: darkseagreen;
+    text-decoration-style: wavy;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width:500px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The following code is taken from https://www.w3schools.com/css/css_form.asp to create the form on the contact me page */
+input[type=text],
+select {
+    width: 75%;
+    height: 100px;
+    padding: 20px;
+    margin: auto;
+    display: block;
+    border: 1px solid darkseagreen;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: .8em;
+}
+
+input[type=submit] {
+    width: 55%;
+    background-color: lavender;
+    color: black;
+    padding: 14px 20px;
+    margin: auto;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: block;
+}
+
+input[type=submit]:hover {
+    background-color: rosybrown;
+}
+
+textarea {
+    width: 50%;
+    height: 200px;
+    padding: 14px 20px;
+    box-sizing: border-box;
+    border: 2px solid darkseagreen;
+    border-radius: 4px;
+    background-color: white;
+    margin: 8px 0;
+    display: inline-block;
+    color: black;
+}
+
+div.contact {
+    width: 50%;
+    text-align: right;
+    margin: 10px;
+    display: inline;
+}
+
+/* The following piece of CSS code was taken from https://www.quackit.com/css/css3/properties/css_background-origin.cfm to introduce CSS3 property of background origin on the form.*/
+#label {
+    margin: 70px;
+    background-image: url("./images/Kerry%20vista.jpg");
+    background-size: cover;
+    background-origin: border-box;
+    border: 20px solid rgba(1, 1, 1, 0.1);
+    text-align: center;
+}
+
+/* The following piece of CSS code is taken from https://www.w3schools.com/howto/howto_css_blog_layout.asp to style the blog layout*/
+#blog {
+    border-radius: 50px;
+    padding: 25px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.photo {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+}
+
+footer {
+    background-color: gainsboro;
+    position: static;
+    color: gray;
+    text-align: center;
+    margin: auto
+}
+
+/*The following two pieces of CSS code was used to style the three column layout on the Articles and Links page. This was taken from https://www.w3schools.com/howto/howto_css_three_columns.asp*/
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*The following code for CSS responsiveness effects the video on the Articles and Links page and was taken from https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+/*The following code was learned from https://www.quackit.com/css/css3/properties/css_border-radius.cfm and adjusted to match the overall style of the blog layout*/
+article {
+    border: 1px solid black;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 30px;
+    padding-bottom: 35px;
+    padding-top: 15px;
+}
